@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const Filter = ({ChangeIsFiltered}) => {
+const Filter = ({ ChangeIsFiltered }) => {
   return (
-    <div>
-        <button onClick={()=>ChangeIsFiltered()}  >Filter</button>
+    <div className="filter-container">
+      <button className="filter-btn" onClick={() => ChangeIsFiltered()}>
+        Filter
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Filter
+export default Filter;
